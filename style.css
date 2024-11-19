@@ -1,0 +1,236 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+header {
+    background-color: burlywood;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: crimson;
+}
+
+.btn-order {
+    background-color: crimson;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: white;
+}
+
+.hero image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-contant {
+    max-width: 600px;
+}
+
+.hero content h1 {
+    font-size: 3rem;
+}
+
+.btn-primary {
+    background-color: crimson;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Products Section */
+#products h2 {
+    padding: 40px 00 40px;
+    text-align: center;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.product {
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.products-img {
+    width: 10px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Testimonials section */
+#testimonials {
+    background-color: burlywood;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonial {
+    margin: 20px;
+    max-width: 300px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: auto;
+    border-radius: 0%;
+}
+
+/* Contact Us Section */
+#contact {
+    padding: 70px;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    padding: 10px 8px;
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(71, 69, 65);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Media Queries for Responsive */
+@media (max-width: 768px){
+    nav ul {
+        display: none;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .btn-order {
+        margin-top: 10px;
+    }
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content h2{
+        font-size: 21cm;
+    }
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+    #products h2 {
+        text-align: center;
+    }
+    .products-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials {
+        flex-direction: column;
+    }
+    .testimonial {
+        margin: auto;
+    }
+    form input,
+    form textarea {
+        width: 900%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .product {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .testimonial {
+        width: 100%;
+    }
+}
